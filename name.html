@@ -1,16 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.content
+{
+    height: 200px;
+    width: 230px;
+}
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+.p1
+{
+    float:right;
+}
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-    <h1>my portfolio</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente at nobis laudantium esse maiores magni culpa saepe? Error, voluptatum ut illum est nisi reiciendis fuga repudiandae libero ad et sequi optio minima harum veniam saepe eligendi quidem earum dolorem tempore distinctio, velit, itaque iste impedit quaerat. Sequi, iure vel!
-    </p>
-    <img src="har.jpg" alt="">
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>PORTFOLIO</h1>
+<hr>
+<img src="har.jpg" alt="Bear" style="width:100px" height="150px">
+<div class="p1">
+<h2>Harshita Khangarot</h2>
+<p>Assistent Professor, CSE department, JIET, Jodhpur</p>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      
+      <h3>Present Position</h3>
+      <p>Pursuing Ph.D.  in “Data Analysis” from JK Lakshmipat University, Jaipur. I had 3 years of experience as a Full time research scholar.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    
+      <h3>PROFESSIONAL SKILLS</h3>
+      <p>Languages: C,C++,asp.net, python
+        Database: My SQL, PL/SQL ,Oracle
+        </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    
+      <h3>PROJECTS COMPLETED</h3>
+      <p>1.	Dissertation project entitled “Performance Analysis of Medical dataset using mining techniques with feature selection”.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    
+      <h3>COURSES COMPLETED</h3>
+      <p>1.	Fitting Statistical Models to Data with Python by University of Michigan on Coursera. Certificate earned at 04/15/2020</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content1">
+  
+  <h3>PUBLICATIONS</h3>
+  <p>1.	Harshita Khangarot, Alok Kumar. (2020). AN ANALYSIS OF BATTING PERFORMANCE OF THE CRICKET PLAYERS. International Journal of Advanced Science and Technology, 29(06), 1574 - 1579. Retrieved from http://sersc.org/journals/index.php/IJAST/article/view/12098</p>
+  <p>2.	Harshita Khangarot, Alok Kumar. (2020). A Statistical Analysis On Bowling Performance Of Player In Professional Cricket. International Journal of Control and Automation, 13(03), 115- 121. Retrieved from http://sersc.org/journals/index.php/IJCA/article/view/24714</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
 </body>
 </html>
